@@ -1,9 +1,5 @@
 -- List all customers that live in Texas:
 
-SELECT *
-FROM address
-WHERE district = 'Texas';
-
 SELECT concat(first_name, ' ', last_name) AS full_name, district
 FROM address AS addy
 JOIN customer AS c
@@ -63,9 +59,6 @@ GROUP BY rating;
 
 -- Show all customers who have made a single payment above 6.99
 -- using subqueries
-
-SELECT *
-FROM payment;
 
 SELECT concat(first_name, ' ', last_name)
 FROM customer
